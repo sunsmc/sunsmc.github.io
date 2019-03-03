@@ -62,6 +62,96 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-zookeeper" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/03/zookeeper/" class="article-date">
+  <time datetime="2019-03-03T03:12:30.741Z" itemprop="datePublished">2019-03-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/03/zookeeper/" data-id="cjsscde500001xzpmkaz4ruoa" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-face" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/16/face/" class="article-date">
+  <time datetime="2019-02-16T09:20:20.204Z" itemprop="datePublished">2019-02-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/16/face/" data-id="cjsscde4t0000xzpmg2j3gbq8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nohup" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/06/nohup/" class="article-date">
+  <time datetime="2019-02-06T02:38:34.227Z" itemprop="datePublished">2019-02-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>nohup不输出日志信息的方法，及linux重定向学习<br>起因<br>最近使用nohup创建了一个后台进程，默认日志输出到了nohup.out文件中，程序跑起来也就没再管，过了大约一周，发现硬盘空间不够了，于是查找原因，发现这个nohup.out文件已经到了70G了，导致硬盘空间不足了。</p>
+<p>解决方案<br>只输出错误信息到日志文件</p>
+<p>nohup ./program &gt;/dev/null 2&gt;log &amp;</p>
+<p>什么信息也不要</p>
+<p>nohup ./program &gt;/dev/null 2&gt;&amp;1 &amp;</p>
+<p>知识补充，关于Linux的重定向<br>Linux的3中重定向</p>
+<p>0:表示标准输入</p>
+<p>1:标准输出,在一般使用时，默认的是标准输出</p>
+<p>2:标准错误信息输出</p>
+<p>可以用来指定需要重定向的标准输入或输出。例如，将某个程序的错误信息输出到log文件中：./program 2&gt;log。这样标准输出还是在屏幕上，但是错误信息会输出到log文件中。另外，也可以实现0，1，2之间的重定向。2&gt;&amp;1：将错误信息重定向到标准输出。</p>
+<p>关于/dev/null文件</p>
+<p>Linux下还有一个特殊的文件/dev/null，它就像一个无底洞，所有重定向到它的信息都会消失得无影无踪。这一点非常有用，当我们不需要回显程序的所有信息时，就可以将输出重定向到/dev/null。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/06/nohup/" data-id="cjsscde5j0004xzpmdfv0d1z4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Feign-RequestLine" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/02/01/Feign-RequestLine/" class="article-date">
@@ -104,7 +194,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/01/Feign-RequestLine/" data-id="cjrllhbrc0000vzpmlr6mc609" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/01/Feign-RequestLine/" data-id="cjsscde5h0003xzpmsbhbpijw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -149,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/01/hello-world/" data-id="cjrllhbri0001vzpm6rb5x34m" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/01/hello-world/" data-id="cjsscde5f0002xzpmor4w7uy4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -177,7 +267,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
     </div>
   </div>
 
@@ -188,6 +278,18 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/03/03/zookeeper/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/16/face/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/06/nohup/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/02/01/Feign-RequestLine/">Feign RequestLine</a>
